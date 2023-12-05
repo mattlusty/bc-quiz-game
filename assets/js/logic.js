@@ -95,4 +95,10 @@ function timeout() {
   finish();
 }
 
+function countDown() {
+  clock--;
+  if (clock < 0) timeout();
+  renderClock();
+}
+
 startButton.addEventListener("click", start);

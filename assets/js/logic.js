@@ -80,4 +80,14 @@ function deductTime() {
   renderClock();
 }
 
+function finish() {
+  finalScoreElement.textContent = score + "/" + questionsLength;
+  questionsScreen.classList.add("hide");
+  endScreen.classList.remove("hide");
+
+  clock = 0;
+  renderClock();
+  clearInterval(clockInterval);
+}
+
 startButton.addEventListener("click", start);

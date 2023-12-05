@@ -90,4 +90,9 @@ function finish() {
   clearInterval(clockInterval);
 }
 
+function timeout() {
+  alert("Times Up!");
+  finish();
+}
+
 startButton.addEventListener("click", start);

@@ -73,4 +73,11 @@ function nextQuestion() {
   }
 }
 
+function deductTime() {
+  // deduct 10 seconds
+  clock -= 10;
+  if (clock < 0) timeout();
+  renderClock();
+}
+
 startButton.addEventListener("click", start);

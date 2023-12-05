@@ -105,4 +105,15 @@ function renderClock() {
   timerElement.textContent = clock;
 }
 
+function submit() {
+  let scores = JSON.parse(localStorage.getItem("scores"));
+  if (!scores) {
+    scores = [];
+  }
+  scores.push([initials.value, score]);
+  localStorage.setItem("scores", JSON.stringify(scores));
+
+  window.location.href = "highscores.html";
+}
+
 startButton.addEventListener("click", start);

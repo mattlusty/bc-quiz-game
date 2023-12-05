@@ -62,4 +62,15 @@ function select(event) {
   nextQuestion();
 }
 
+function nextQuestion() {
+  questionIndex++;
+  if (questionIndex < questionsLength) {
+    console.log("Question: " + (questionIndex + 1) + "/" + questions.length);
+    renderQuestion();
+  } else {
+    console.log("End of Quiz");
+    finish();
+  }
+}
+
 startButton.addEventListener("click", start);

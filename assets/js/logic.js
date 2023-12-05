@@ -16,16 +16,33 @@ let clockInterval;
 let clock = 40;
 
 function renderQuestion() {
+  choicesElement.innerHTML = null;
+
+  let choicesListElement = document.createElement("ul");
   let question = questions[questionIndex];
   let questionText = question[0];
+  let choices = question[1];
   titleElement.textContent = questionText;
-  questionsElement.classList.remove("hide");
+  let choiceElement;
+
+  choices.forEach((choice, index) => {
+    choiceElement = document.createElement("li");
+    choiceButton = document.createElement("button");
+    choiceButton.setAttribute("data-index", index);
+    choiceButton.textContent = "select";
+    choiceButton.addEventListener("click", select);
+    choiceElement.textContent = choice;
+    choiceElement.appendChild(choiceButton);
+    choicesListElement.appendChild(choiceElement);
+  });
+  choicesElement.appendChild(choicesListElement);
 }
 
 function start(event) {
-  const startScreen = document.getElementById("start-screen");
   startScreen.remove();
-  renderQuestion();
+  questionsScreen.classList.remove("hide");
+  clockInterval = setInterval(countDown, 1000);
+  nextQuestion();
 }
 
 startButton.addEventListener("click", start);

@@ -117,3 +117,5 @@ function submit() {
 }
 
 startButton.addEventListener("click", start);
+
+startButton.addEventListener("click", start);

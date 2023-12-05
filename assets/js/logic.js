@@ -101,4 +101,8 @@ function countDown() {
   renderClock();
 }
 
+function renderClock() {
+  timerElement.textContent = clock;
+}
+
 startButton.addEventListener("click", start);

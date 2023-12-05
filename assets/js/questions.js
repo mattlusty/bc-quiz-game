@@ -1,42 +1,22 @@
 const questions = [
   [
-    "What is 0?",
-    [
-      "Answer 0 is very long sentence that could be multiple lines long",
-      "Answer 1 is very long sentence that could be multiple lines long",
-      "Answer 2 is very long sentence that could be multiple lines long",
-      "Answer 3 is very long sentence that could be multiple lines long",
-    ],
+    "The condition in an if / else statement is enclosed within _____",
+    ["Quotes", "Curley Brackets", "Parentheses", "Square Brackets"],
+    2,
+  ],
+  [
+    "Arrays in Javascript can be used to store _____ .",
+    ["Numbers and Strings", "Other Arrays", "Booleans", "All of the above"],
     3,
   ],
   [
-    "What is 1?",
-    [
-      "Answer 0 is very long sentence that could be multiple lines long",
-      "Answer 1 is very long sentence that could be multiple lines long",
-      "Answer 2 is very long sentence that could be multiple lines long",
-      "Answer 3 is very long sentence that could be multiple lines long",
-    ],
-    4,
+    "String values must be enclosed within _____ when being assigned to variables.",
+    ["Commas", "Curley Braces", "Quotes", "Parentheses"],
+    2,
   ],
   [
-    "What is 2?",
-    [
-      "Answer 0 is very long sentence that could be multiple lines long",
-      "Answer 1 is very long sentence that could be multiple lines long",
-      "Answer 2 is very long sentence that could be multiple lines long",
-      "Answer 3 is very long sentence that could be multiple lines long",
-    ],
-    1,
-  ],
-  [
-    "What is 3?",
-    [
-      "Answer 0 is very long sentence that could be multiple lines long",
-      "Answer 1 is very long sentence that could be multiple lines long",
-      "Answer 2 is very long sentence that could be multiple lines long",
-      "Answer 3 is very long sentence that could be multiple lines long",
-    ],
-    0,
+    "A very useful tool during development and debugging for printing content to the debugger is",
+    ["Javascript", "Terminal / bash", "For Loops", "The Console"],
+    3,
   ],
 ];

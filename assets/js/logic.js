@@ -9,7 +9,11 @@ const initialsElement = document.getElementById("initials");
 const submitButton = document.getElementById("submit");
 const timerElement = document.getElementById("time");
 
-let questionIndex = 0;
+let questionIndex = -1; // current question index;
+const questionsLength = questions.length;
+let score = 0;
+let clockInterval;
+let clock = 40;
 
 function renderQuestion() {
   let question = questions[questionIndex];

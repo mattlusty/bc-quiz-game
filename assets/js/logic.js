@@ -45,4 +45,21 @@ function start(event) {
   nextQuestion();
 }
 
+function select(event) {
+  let choiceIndex = event.target.getAttribute("data-index");
+  let question = questions[questionIndex];
+  let answerIndex = question[2];
+
+  if (choiceIndex == answerIndex) {
+    console.log("correct");
+    score++;
+  } else {
+    console.log("incorrect");
+    deductTime();
+  }
+
+  console.log("Score: " + score + "/" + (questionIndex + 1));
+  nextQuestion();
+}
+
 startButton.addEventListener("click", start);

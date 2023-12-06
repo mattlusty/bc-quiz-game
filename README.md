@@ -13,8 +13,11 @@ https://mattlusty.github.io/quiz-game-bc
 Bootcamp Module 6 Challenge
 
 Web Development Quiz - multiple choice
+
 Timed quiz - incorrect answers deduct 10 seconds from the clock.
+
 Option to save your scores with your initials at the end.
+
 A highscores screen shows previous players scores.
 
 ## Features
